@@ -8,9 +8,6 @@ module.exports = {
         'ui': ['angular-material'],
         'app': ['./src/index.js']
     },
-    // output: {
-    //     filename: 'bundle.js'
-    // },
     devtool: 'source-map',
     output: {
         path: path.resolve(__dirname, './docs'),
@@ -50,19 +47,6 @@ module.exports = {
         new HtmlWebpackPlugin({
             inject: true,
             template: path.resolve(__dirname, './src/index.html'),
-            // favicon: path.resolve(__dirname, '../static/favicon.ico'),
-            // minify: {
-            //     removeComments: true,
-            //     collapseWhitespace: true,
-            //     removeRedundantAttributes: true,
-            //     useShortDoctype: true,
-            //     removeEmptyAttributes: true,
-            //     removeStyleLinkTypeAttributes: true,
-            //     keepClosingSlash: true,
-            //     minifyJS: true,
-            //     minifyCSS: true,
-            //     minifyURLs: true
-            // }
         }),
         // new CopyWebpackPlugin([{
         //     from: path.resolve(__dirname, './static')
